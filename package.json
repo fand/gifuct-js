@@ -1,41 +1,41 @@
 {
-    "name": "@fand/gifuct-js",
-    "version": "1.0.0",
-    "description": "Easy to use efficient .GIF parsing in the browser",
-    "main": "src/index.js",
-    "scripts": {
-        "dev": "parcel examples/index.js",
-        "build": "parcel build examples/index.js",
-        "format": "prettier --write src/**/*.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/fand/gifuct-js.git"
-    },
-    "keywords": [
-        "gif",
-        "parser",
-        "javascript"
-    ],
-    "author": "Takayosi Amagi",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/fand/gifuct-js/issues"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "src/*.{ts,tsx}": [
-            "prettier --write",
-            "git add"
-        ]
-    },
-    "homepage": "https://github.com/fand/gifuct-js",
-    "devDependencies": {
-        "parcel-bundler": "^1.12.4",
-        "prettier": "^1.19.1"
+  "name": "@fand/gifuct-js",
+  "description": "Easy to use efficient .GIF parsing in the browser",
+  "version": "1.0.0",
+  "author": "Takayosi Amagi",
+  "bugs": {
+    "url": "https://github.com/fand/gifuct-js/issues"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^1.19.1"
+  },
+  "homepage": "https://github.com/fand/gifuct-js",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  },
+  "keywords": [
+    "gif",
+    "javascript",
+    "parser"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "src/*.{ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fand/gifuct-js.git"
+  },
+  "scripts": {
+    "build": "parcel build examples/index.js",
+    "dev": "parcel examples/index.js",
+    "format": "prettier --write src/**/*.js"
+  }
 }
