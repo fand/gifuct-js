@@ -283,3 +283,4 @@ GIF.prototype.decompressFrames = function(buildPatch, startFrame, endFrame) {
 };
 
 module.exports = GIF;
+module.exports.default = GIF;
